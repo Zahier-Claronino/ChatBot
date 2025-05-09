@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <style>
+      body{
+        width:100%;
+        height:100vh;
+        background-image: url("background-AI.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+      }
+
+      body::before{
+        top:0;
+        left: 0;
+        content: "";
+        background-color: rgba(0, 0, 0, 0.553);
+        position: absolute;
+        z-index: 2;
+        width:100%;
+        height:100%;
+        
+      }
+       h1{
+        text-align:center;
+        color:white;
+        font-family:cursive;
+        position: relative;
+        z-index: 3;
+        font-size: 42px;
+       }
+
+       .topics-covered{
+        position: relative;
+        z-index: 3;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        width:100%;
+
+       }
+       
+
+       .topics-covered h2{
+          color:white;
+          font-family: Arial, Helvetica, sans-serif;
+          text-align:center;
+          width:60%;
+        
+       }
+
+       .topics-covered p{
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:20px;
+        text-align:center;
+        width:60%;
+       }
+    
+    </style>
+</head>
+
+
+
+<body>
+  <df-messenger
+ 
+    intent="WELCOME"
+    chat-title="AI_teacher"
+    agent-id="24215fc6-555e-4ebe-88b0-130a096887ac"
+    language-code="en"
+  ></df-messenger>
+
+  <h1>Welcome To AI Fundamentals</h1>
+
+  <div class="topics-covered">
+    <h2>Topics covered include:</h2><br>
+    <p>Machine Learning<br>Natural Language Propcessing<br>Large Language Models<br>Computer Vision<br>and there real world applications</p><br>
+
+    <h2>In addition to that comparisons between AI, Machine Learning and Deep Learning and also the ethical considerations when it comes to AI</h2>
+
+
+  </div>
+
+
+</body>
+</html>
